@@ -9,4 +9,12 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Models\ViewModels\" />
+    <None Remove="Views\Departments\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\ViewModels\" />
+    <Folder Include="Views\Departments\" />
+  </ItemGroup>
 </Project>
