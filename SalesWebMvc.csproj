@@ -10,10 +10,14 @@
 
   <ItemGroup>
     <None Remove="Models\ViewModels\" />
-    <None Remove="Views\Departments\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\ViewModels\" />
-    <Folder Include="Views\Departments\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\DepartmentsController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Departments\Index.cshtml" />
   </ItemGroup>
 </Project>
