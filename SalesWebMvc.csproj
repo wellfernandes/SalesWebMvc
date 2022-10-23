@@ -6,27 +6,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.10" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
-    <PackageReference Include="System.Text.Json" Version="6.0.6" />
-    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="6.0.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Core" Version="6.0.10" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration" Version="6.0.10" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating" Version="6.0.10" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils" Version="6.0.10" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore" Version="6.0.10" />
-    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
-    <PackageReference Include="Microsoft.DotNet.Scaffolding.Shared" Version="6.0.10" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.1" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc" Version="6.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,6 +36,8 @@
     <None Remove="Microsoft.DotNet.Scaffolding.Shared" />
     <None Remove="System.Configuration.ConfigurationManager" />
     <None Remove="Microsoft.VisualStudio.Web.CodeGenerators.Mvc" />
+    <None Remove="Microsoft.AspNetCore.Mvc.Core" />
+    <None Remove="Microsoft.AspNetCore.Mvc" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\ViewModels\" />
