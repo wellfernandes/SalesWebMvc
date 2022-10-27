@@ -13,7 +13,11 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.10" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -38,12 +42,14 @@
     <None Remove="Microsoft.VisualStudio.Web.CodeGenerators.Mvc" />
     <None Remove="Microsoft.AspNetCore.Mvc.Core" />
     <None Remove="Microsoft.AspNetCore.Mvc" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controllers\DepartmentsController.cs" />
+    <Compile Remove="Models\SalesWebMvcContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Departments\Index.cshtml" />
